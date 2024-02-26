@@ -4,19 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SuperHeroes</title>
+  <meta name="author" content="-Lita">
+  <meta name="description" content="Busca tu superheroe favorito">
+  <meta name="keywords" content="heroes, poderes, habilidades, marvel, dc comics, entretencion, analisis, superheroes">
 
   <!--Tipo de letra-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  
+
   <!--booststrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
+
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico">
   <!--style.css-->
   <link rel="stylesheet" href="assets/css/style.css">
+  <title>SuperHeroes</title>
 </head>
 
 <body>
@@ -43,35 +47,35 @@
     </div>
   </nav>
 
-<!--HEADER-->
-  <header class="py-5 text-center">
+  <!--HEADER-->
+  <header class="py-5 text-center headerr arriba">
     <div class="container">
       <img src="assets/img/sh1.jpg" class="imagenPrincipal" alt="imagenPrincipal">
     </div>
   </header>
 
 
-<!--FORMULARIO-->
-<div id="buscador" class="container grid col-9 titulo pt-5">
-  <h1>Encuentra tu SuperHero </h1>
-  <div class="resultado" style="color:blueviolet"></div>
+  <!--FORMULARIO-->
+  <div id="buscador" class="container grid col-9 titulo pt-5">
+    <h1>Encuentra tu SuperHero </h1>
+    <div class="resultado" style="color:blueviolet"></div>
 
-  <form id="formulario">
-    <div class="grid">
-
-        <label for="">Ingrese el número del SuperHero a buscar entre el 1 al 731</label> <br>
-        <input id="numero" type="text" class="textNumero form-control ">
-        <p class="errorNumero" style="color:red"></p>
-
-      <div>
-        <button id="botton" type="submit" class="btn btn-success"> Buscar </button>
-
-        <p class="resultado"></p>
+    <form id="formulario">
+      <div class="grid">
+        <div class="col-12 col-s-12 col-md-9 col-lg-9">
+          <label for="">Ingrese el número del SuperHero a buscar entre el 1 al 731</label> <br>
+          <input id="numero" type="text" class="textNumero form-control ">
+          <p class="errorNumero" style="color:red"></p>
+        </div>
+        <div>
+          <button id="botton" type="submit" class="btn btn-success"> Buscar </button>
+          <p class="resultado"></p>
+        </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 
-<!--API -->
+  <!--API -->
   <!-- <h4>Información de la API superheroes</h4>
     <div>
       <button class="boton1" type="button">Mostrar Información</button> 
@@ -79,55 +83,54 @@
     </div>
   </div> -->
 
-
-
- <!--CARD  -->
- <div class="container">
-  <div class="ordenandoCard" style="display: none;">
-    <div class="row justify-content-center">
-        <h2 class="text-center">SuperHero Encontrado </h2>
-        <div class="card mb-5">
-          <div class="row g-0">
-              <img src="..." class="card-img img-fluid rounded-start" alt="imagensuperheroe">
-            </div>
-              <div class="card-body">
-                <h5 class="card-title">Nombre</h5>
-                <p class="card-text1">Conexiones texto largo.</p>
-                <p class="card-text2"><small class="text-body-secondary">Publicado por</small>
+  <!--CARD  -->
+  <div class="container">
+    <div class="ordenandoCard" style="display: none;">
+      <div class="row justify-content-center">
+        <!--card-->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <h2 class="text-center">SuperHero Encontrado </h2>
+          <div class="card mb-5">
+            <div class="row g-0">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <img src="..." class="card-img img-fluid rounded-start" alt="imagensuperheroe">
+              </div>
+              <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title">Nombre</h5>
+                  <p class="card-text1">Conexiones texto largo.</p>
+                  <p class="card-text2"><small class="text-body-secondary">Publicado por</small>
+                    <hr>
+                  </p>
+                  <p class="card-text3"><small class="text-body-secondary">Ocupación</small>
+                    <hr>
+                  </p>
+                  <p class="card-text4"><small class="text-body-secondary">Primera Aparición</small></p>
                   <hr>
-                </p>
-                <p class="card-text3"><small class="text-body-secondary">Ocupación</small>
+                  <p class="card-text5"><small class="text-body-secondary">Altura</small></p>
                   <hr>
-                </p>
-                <p class="card-text4"><small class="text-body-secondary">Primera Aparición</small></p>
-                <hr>
-                <p class="card-text5"><small class="text-body-secondary">Altura</small></p>
-                <hr>
-                <p class="card-text6"><small class="text-body-secondary">Peso</small></p>
-                <hr>
-                <p class="card-text7"><small class="text-body-secondary">Alianzas</small></p>
+                  <p class="card-text6"><small class="text-body-secondary">Peso</small></p>
+                  <hr>
+                  <p class="card-text7"><small class="text-body-secondary">Alianzas</small></p>
+                </div>
               </div>
             </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-              <div id="chartContainer"> </div>
-            </div>
-
           </div>
         </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <!-- invocar al GRAFICO-->
+          <div id="chartContainer"> </div>
+        </div>
       </div>
+    </div>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
+  <!--FOOTER-->
+  <footer class="footer bg-arriba-abajo text-white d-none d-md-block d-lg-block">
+    <div class="container-fluid text-center p-3">
+      <p class="py-3"> SuperHero. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
   <!--jquery-->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

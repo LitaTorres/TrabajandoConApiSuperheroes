@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg-arriba-abajo {
+    background-color:#373A3C;
+}
+
+.card-body {
+   font-size: 10px;
+}
+
+.card-title {
+    font-size: 10px;
+}
+
+.card-img {
+    height: 100%;
+}
+
+h2, h1 {
+    font-weight: bold;
+}
+
+.footer {
+    height: 100px;
+}
+
+.headerr {
+    background-image: url(../img/capa.gif);
+}
+
+@keyframes headerr {
+    from { background-image: url(../img/rayos.gif) }
+    to {background-image: url(../img/capa.gif);}   
+}
+
+.arriba { 
+    animation-name: headerr;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+} 
+
+@media screen and (max-width: 769px) {
+    .ordenandoCard {
+        width: 540px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+    }  
+
+    .titulo {
+        text-align: center;
+    }
+
+    .formulario {
+        text-align: center;
+    }
+
+    .imagenPrincipal {
+        width: 100%;
+    }
+
+    .card-body {
+        font-size: 13px;
+    }
+
+    .card-title {
+        font-size: 13px;
+    }
+}
+
+
