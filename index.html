@@ -11,7 +11,7 @@
   <!--Tipo de letra-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
   <!--booststrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -26,7 +26,7 @@
 <body>
 
   <!--NAVBAR-->
-  <nav id="navbar" class="navbar bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
+  <nav class="navbar bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="assets/img/favicon.ico" alt="logo" width="40" height="35"> <span
           class="heroes"> SUPERHEROES </span></a>
@@ -37,10 +37,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav display:content ms-auto fs-6 fw-bold">
           <li class="nav-item ">
-            <a class="nav-link" href="#navbar">Inicio</a>
+            <a class="nav-link" href="#top">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#buscador">Encuentra tu SuperHero</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#chartContainer">Estadísticas</a>
           </li>
         </ul>
       </div>
@@ -48,7 +51,7 @@
   </nav>
 
   <!--HEADER-->
-  <header class="py-5 text-center headerr arriba">
+  <header id="top" class="py-5 text-center headerr arriba">
     <div class="container">
       <img src="assets/img/sh1.jpg" class="imagenPrincipal" alt="imagenPrincipal">
     </div>
@@ -74,14 +77,6 @@
       </div>
     </form>
   </div>
-
-  <!--API -->
-  <!-- <h4>Información de la API superheroes</h4>
-    <div>
-      <button class="boton1" type="button">Mostrar Información</button> 
-      <div class="resultado2"></div>
-    </div>
-  </div> -->
 
   <!--CARD  -->
   <div class="container">
@@ -152,7 +147,10 @@
   <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
 
-  <!--script-->
+  <!--script plugin-->
+  <script src="assets/js/jQuery.superHeroes.js"></script>
+
+  <!--script básico-->
   <script src="assets/js/script.js"></script>
 
 </body>

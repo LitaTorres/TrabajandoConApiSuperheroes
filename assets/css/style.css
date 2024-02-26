@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bg-arriba-abajo {
@@ -21,7 +21,8 @@ body {
 }
 
 h2, h1 {
-    font-weight: bold;
+    font-weight: 900;
+    color: #373A3C;
 }
 
 .footer {
@@ -42,7 +43,7 @@ h2, h1 {
     animation-duration: 3s;
     animation-iteration-count: infinite;
 } 
-
+/* poquito de media screen */
 @media screen and (max-width: 769px) {
     .ordenandoCard {
         width: 540px;
