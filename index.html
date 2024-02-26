@@ -58,11 +58,11 @@
 
   <form id="formulario">
     <div class="grid">
-      <div class="col-12 col-s-12 col-md-9 col-lg-9">
+
         <label for="">Ingrese el número del SuperHero a buscar entre el 1 al 731</label> <br>
         <input id="numero" type="text" class="textNumero form-control ">
         <p class="errorNumero" style="color:red"></p>
-      </div>
+
       <div>
         <button id="botton" type="submit" class="btn btn-success"> Buscar </button>
 
@@ -72,12 +72,61 @@
   </form>
 
 <!--API -->
-  <h4>Información de la API superheroes</h4>
+  <!-- <h4>Información de la API superheroes</h4>
     <div>
       <button class="boton1" type="button">Mostrar Información</button> 
       <div class="resultado2"></div>
     </div>
-  </div>
+  </div> -->
+
+
+
+ <!--CARD  -->
+ <div class="container">
+  <div class="ordenandoCard" style="display: none;">
+    <div class="row justify-content-center">
+        <h2 class="text-center">SuperHero Encontrado </h2>
+        <div class="card mb-5">
+          <div class="row g-0">
+              <img src="..." class="card-img img-fluid rounded-start" alt="imagensuperheroe">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Nombre</h5>
+                <p class="card-text1">Conexiones texto largo.</p>
+                <p class="card-text2"><small class="text-body-secondary">Publicado por</small>
+                  <hr>
+                </p>
+                <p class="card-text3"><small class="text-body-secondary">Ocupación</small>
+                  <hr>
+                </p>
+                <p class="card-text4"><small class="text-body-secondary">Primera Aparición</small></p>
+                <hr>
+                <p class="card-text5"><small class="text-body-secondary">Altura</small></p>
+                <hr>
+                <p class="card-text6"><small class="text-body-secondary">Peso</small></p>
+                <hr>
+                <p class="card-text7"><small class="text-body-secondary">Alianzas</small></p>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div id="chartContainer"> </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!--jquery-->
