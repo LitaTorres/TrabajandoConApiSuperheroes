@@ -13,6 +13,7 @@ jQuery.fn.superHeroes = function () {
         if (resultado == true) {
             superheroe(textNumero); //antes decía solo funcion exito, pero ahora tb llamamos a la función creada
             exito();
+            $('.ordenandoCard2').hide(); // agregué esta linea para que al hacer clic en el boton "buscar", siempre q pase la validación, se oculten las 4 imagenes de la card del inicio
         };
     });
 
@@ -40,7 +41,7 @@ jQuery.fn.superHeroes = function () {
 
     //Conectando con AJAX
     function superheroe(id) {
-        var urlApi = "https://superhero.arielhernandezcl.workers.dev/" + id;
+        var urlApi = "https://www.superheroapi.com/api.php/4905856019427443/" + id;
         $.ajax({
             type: "GET",
             url: urlApi,
@@ -115,4 +116,25 @@ jQuery.fn.superHeroes = function () {
 
         return this;
     }
+
+//Poner 4 imágenes en cards al inicio de 4 ids diferentes
+const ids = [502, 341, 346, 638];
+const ClasesImgCard = ['.card-img2','.card-img3','.card-img4','.card-img5']
+
+   ids.forEach((id, index) => {
+        var urlApi = `https://www.superheroapi.com/api.php/4905856019427443/${id}`;
+        $.ajax({
+            type: "GET",
+            url: urlApi,
+            dataType: "json",
+            success: function (datosApi) {
+                console.log(datosApi);
+                $('.ordenandoCard2').show();
+                $(ClasesImgCard[index]).attr('src', datosApi.image.url);
+            },
+            error: function (error) {
+                console.log(error)
+            }
+        });
+    })
 };

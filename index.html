@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="-Lita">
+  <meta name="author" content="Lita">
   <meta name="description" content="Busca tu superheroe favorito">
   <meta name="keywords" content="heroes, poderes, habilidades, marvel, dc comics, entretencion, analisis, superheroes">
 
@@ -26,26 +26,19 @@
 <body>
 
   <!--NAVBAR-->
-  <nav class="navbar bg-dark border-bottom border-body sticky-top" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="assets/img/favicon.ico" alt="logo" width="40" height="35"> <span
-          class="heroes"> SUPERHEROES </span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        class="heroes"> SUPERHEROES </span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav display:content ms-auto fs-6 fw-bold">
-          <li class="nav-item ">
-            <a class="nav-link" href="#top">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#buscador">Encuentra tu SuperHero</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#chartContainer">Estadísticas</a>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav display:content ms-auto fs-6 fw-bold">
+          <a class="nav-link" href="#top">Inicio</a>
+          <a class="nav-link" href="#buscador">Encuentra tu SuperHero</a>
+          <a class="nav-link" href="#chartContainer">Estadísticas</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -56,7 +49,6 @@
       <img src="assets/img/sh1.jpg" class="imagenPrincipal" alt="imagenPrincipal">
     </div>
   </header>
-
 
   <!--FORMULARIO-->
   <div id="buscador" class="container grid col-9 titulo pt-5">
@@ -77,6 +69,27 @@
       </div>
     </form>
   </div>
+
+  <!--CARD INICIO -->
+  <section class="container">
+    <div class="ordenandoCard2" >
+      <div class="row justify-content-center">
+        <!--card-->
+              <div class="col-9 col-sm-6 col-md-3 col-lg-3 py-4">
+                <img src="..." class="card-img2 img-fluid rounded-start" alt="imagensuperheroe">
+              </div>
+              <div class="col-9 col-sm-6 col-md-3 col-lg-3 py-4">
+                <img src="..." class="card-img3 img-fluid rounded-start" alt="imagensuperheroe">
+              </div>
+              <div class="col-9 col-sm-6 col-md-3 col-lg-3 py-4">
+                <img src="..." class="card-img4 img-fluid rounded-start" alt="imagensuperheroe">
+              </div>
+              <div class="col-9 col-sm-6 col-md-3 col-lg-3 py-4">
+                <img src="..." class="card-img5 img-fluid rounded-start" alt="imagensuperheroe">
+              </div>
+          </div>
+        </div>
+      </section>
 
   <!--CARD  -->
   <div class="container">
